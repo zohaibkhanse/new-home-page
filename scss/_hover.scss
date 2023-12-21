@@ -1,0 +1,43 @@
+
+
+.nav-link{
+    color: $Very-dark-blue;
+    &:hover,
+    &:focus{
+        color:$Soft-red;
+    }
+}
+
+.btn{
+    border-right-style: solid;
+    &:hover,
+    &:focus{
+        // outline: 1px solid $Very-dark-blue;
+        color:$Soft-red
+
+    }
+}
+/*===========================
+Main Content Site Btn
+=============================*/
+.site-intro-btn:focus,
+.site-intro-btn:hover{
+    background-color: $Dark-grayish-blue;
+}
+
+.new__sub-title:hover,
+.new__sub-title:focus{
+    color:$soft-orange;
+    
+}
+.new__link:focus{
+    color:$soft-orange;
+}
+
+/*=================================
+    Card-link
+======================================*/
+.card__link:hover,
+.card__link:focus{
+    color:$Soft-red;
+}

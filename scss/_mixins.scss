@@ -1,0 +1,58 @@
+@mixin navForLageScreen {
+  .nav {
+    position: static;
+    display: flex;
+    flex-flow: row;
+    min-height: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: end;
+  }
+  .nav-list {
+    width: auto;
+  }
+
+  .nav-link {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  .open-menu-btn,
+  .close-menu-btn {
+    display: none;
+  }
+}
+
+@mixin heroForLargeScreen {
+  /*===========================
+     Main Content Hero
+    =============================*/
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo logo sidebar"
+      "title intro sidebar";
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+  .hero-image {
+    grid-area: logo;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-self: start;
+  }
+  .site-title {
+    grid-area: title;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .site-intro {
+    grid-area: intro;
+    justify-self: start;
+    display: flex;
+    flex-flow: column;
+  }
+}

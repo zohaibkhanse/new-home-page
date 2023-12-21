@@ -1,0 +1,95 @@
+@import "mixins";
+
+@media screen and (min-width: 240px) {
+  .nav {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 576px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /*=========================
+    Nav Header
+    ===========================*/
+  @include navForLageScreen;
+  /*=========================
+    Hero
+    ===========================*/
+
+  @include heroForLargeScreen;
+
+  // Side bar
+  .new {
+    grid-area: sidebar;
+    margin: 0;
+    padding: 10px;
+    &__sub-title {
+      font-size: 1rem;
+    }
+  }
+
+  // Cards
+  .card--1 {
+    grid-column: 1 / 3;
+  }
+  .card--2 {
+    grid-column: 3 / 4;
+  }
+  .card--3 {
+    grid-column: 1/ 4;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+  .main-content {
+    column-gap: 2rem;
+  }
+  // Hero
+  .site-intro {
+    justify-content: space-between;
+  }
+  .site-intro-btn {
+    margin: 0;
+  }
+  .site-title {
+    font-size: 3rem;
+  }
+
+  /*=======================
+New-site title
+========================*/
+  .new {
+    padding: 1rem;
+  }
+  .new__sub-title {
+    font-size: 1.2rem;
+  }
+  /*=======================
+    cards
+========================*/
+  .card--1 {
+    grid-column: 1 / 2;
+  }
+  .card--2 {
+    grid-column: 2 / 3;
+  }
+  .card--3 {
+    grid-column: 3 /4;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
