@@ -22,7 +22,7 @@ navEl.addEventListener('click', function(e){
     }
 });
 
-document.querySelector("keydown", function(e){
+document.addEventListener("keydown", function(e){
     if(e.key === "Escape"){
         hideMenu();
     }
